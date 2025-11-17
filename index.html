@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <nav class="nav container">
-          <div class="logo">Nova.dev</div>
+          <div id="logo" class="logo">Nova</div>
           <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -28,12 +28,11 @@
     <!-- Hero -->
     <section id="hero" class="hero container">
       <div class="hero-text">
-        <p class="hero-eyebrow">Fullstack Dev · Solo SaaS Builder</p>
-        <h1>안녕하세요, 노바입니다.<br />실전형 서비스를 만드는 개발자예요.</h1>
-        <p class="hero-sub">
-          Flutter와 NestJS, PostgreSQL로<br />
-          실제로 쓰이는 제품을 만드는 것을 좋아합니다.
-        </p>
+        <p class="hero-eyebrow">Practical Product-Focused Developer</p>
+        <h1>아이디어를 실제로 동작하는 <br />서비스로 만드는 것을 좋아합니다.</h1>
+        <p class="hero-sub">특정 기술 스택이나 도메인에 한정되지 않고,<br />
+문제를 정의하고 해결책을 설계한 뒤<br />
+직접 구현해서 검증하는 과정을 중요하게 생각합니다.</p>
         <div class="hero-actions">
           <a href="#projects" class="btn primary">프로젝트 보기</a>
           <a href="https://github.com/..." target="_blank" class="btn ghost">GitHub</a>
@@ -44,55 +43,115 @@
     <!-- About -->
     <section id="about" class="section container">
       <h2 class="section-title">About</h2>
-      <p>
-        현장에서 배달·부동산·서비스업을 경험하면서 발견한 비효율을
-        IT로 해결하는 데 관심이 많습니다. 1인 개발자로, 작은 아이디어라도
-        실제로 동작하는 프로덕트까지 빠르게 가져가는 것을 목표로 하고 있습니다.
-      </p>
+      <p>새로운 환경과 제약 속에서 작게 시작해 빠르게 검증하고,<br />
+실제 사용자가 쓸 수 있는 형태까지 다듬는 과정에 관심이 많습니다.
+
+도구나 기술 자체보다,
+“어떤 문제를 해결하는지”,<br />
+“사용자가 무엇을 더 편하게 느끼는지”에 집중하며 작업합니다.<br />
+
+혼자 작업하는 상황에서도<br />
+구조화된 설계, 버전 관리, 기록 등을 통해<br />
+이후 확장이 가능한 형태로 프로젝트를 쌓아가는 것을 지향합니다.</p>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section container">
       <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Frontend</h3>
-          <p>Flutter · HTML · CSS · JavaScript</p>
+    
+      <div class="skill-badges">
+    
+        <div class="skill-badge badge-flutter">
+          <img src="assets/img/skill/flutter.svg" alt="Flutter" />
+          <span>Flutter</span>
         </div>
-        <div class="skill-card">
-          <h3>Backend</h3>
-          <p>NestJS · Node.js · REST API</p>
+    
+        <div class="skill-badge badge-html">
+          <img src="assets/img/skill/html5.svg" alt="HTML5" />
+          <span>HTML5</span>
         </div>
-        <div class="skill-card">
-          <h3>Database & Infra</h3>
-          <p>PostgreSQL · Prisma · GCP · Firebase</p>
+    
+        <div class="skill-badge badge-css">
+          <img src="assets/img/skill/css.svg" alt="CSS" />
+          <span>CSS</span>
         </div>
+    
+        <div class="skill-badge badge-js">
+          <img src="assets/img/skill/javascript.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+    
+        <div class="skill-badge badge-postcss">
+          <img src="assets/img/skill/postcss.svg" alt="PostCSS" />
+          <span>PostCSS</span>
+        </div>
+    
+        <div class="skill-badge badge-nest">
+          <img src="assets/img/skill/nestjs.svg" alt="NestJS" />
+          <span>NestJS</span>
+        </div>
+    
+        <div class="skill-badge badge-python">
+          <img src="assets/img/skill/python.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+    
+        <div class="skill-badge badge-github">
+          <img src="assets/img/skill/github.svg" alt="GitHub" />
+          <span>GitHub</span>
+        </div>
+    
+        <div class="skill-badge badge-cursor">
+          <img src="assets/img/skill/cursor.svg" alt="Cursor IDE" />
+          <span>Cursor</span>
+        </div>
+    
       </div>
     </section>
+    
 
     <!-- Projects -->
     <section id="projects" class="section container">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <h3>Real Estate CRM & Matching</h3>
-          <p class="project-tag">Flutter · NestJS · PostgreSQL</p>
-          <p class="project-desc">
-            중개사들이 고객/매물 정보를 한 곳에서 관리하고, 조건 기반으로 자동 매칭할 수 있는
-            CRM & 매칭 시스템입니다.
-          </p>
+          <h3>Workflow Organizer</h3>
+          <p class="project-tag">Vanilla JS · HTML/CSS</p>
+          <p class="project-desc">흩어져 있는 작업과 메모를 한 곳에서 정리하고,<br /> 
+            간단한 우선순위와 상태를 부여할 수 있는
+            브라우저 기반 도구입니다.<br />
+            가벼운 기술 스택만으로도<br />
+            일상적인 불편을 줄일 수 있는지 실험해 보기 위해 만들었습니다.</p>
           <a href="https://github.com/..." target="_blank" class="project-link">GitHub 보기 →</a>
         </article>
         <!-- 다른 프로젝트들도 추가 -->
+        <article class="project-card">
+          <h3>Simple Analytics Dashboard</h3>
+          <p class="project-tag">JavaScript · REST API</p>
+          <p class="project-desc">외부 API로부터 가져온 데이터를<br />
+            최소한의 그래프와 카드 컴포넌트로 시각화한 대시보드입니다.<br />
+            복잡한 차트 라이브러리에 의존하지 않고,<br />
+            직접 레이아웃과 스타일을 구성해<br />
+            정보 전달에 필요한 요소만 남기는 것을 목표로 했습니다.</p>
+          <a href="https://github.com/..." target="_blank" class="project-link">GitHub 보기 →</a>
+        </article>
+        <article class="project-card">
+          <h3>Prototype Landing Page</h3>
+          <p class="project-tag">HTML · CSS · JavaScript</p>
+          <p class="project-desc">가상의 서비스 콘셉트를 설정하고,<br />
+            한 페이지 안에서 가치 제안과 주요 기능,<br />
+            기대하는 사용자 행동을 전달하는 데 집중한 랜딩 페이지입니다.<br />
+            레이아웃, 타이포그래피, 인터랙션을<br />
+            프레임워크 없이 직접 구현해 보는 연습용 프로젝트입니다.</p>
+          <a href="https://github.com/..." target="_blank" class="project-link">GitHub 보기 →</a>
+        </article>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section container">
         <h2 class="section-title">Contact</h2>
-        <p class="contact-intro">
-          함께 이야기해보고 싶으시면 아래 폼으로 연락을 남겨주세요.  
-          메일로 답장드릴게요 🙂
+        <p class="contact-intro">함께 이야기해보고 싶으시면 아래 폼으로 연락을 남겨주세요.<br />메일로 답장드릴게요 🙂
         </p>
       
         <form id="contact-form" class="contact-form">

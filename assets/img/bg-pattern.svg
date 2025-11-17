@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#6a0dad" stop-opacity="0.12" />
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#glow)" />
+  <g fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <path d="M0 20H240M0 40H240M0 60H240M0 80H240M0 100H240M0 120H240M0 140H240M0 160H240M0 180H240M0 200H240M0 220H240" />
+    <path d="M20 0V240M40 0V240M60 0V240M80 0V240M100 0V240M120 0V240M140 0V240M160 0V240M180 0V240M200 0V240M220 0V240" />
+  </g>
+  <circle cx="40" cy="40" r="3" fill="rgba(255,255,255,0.12)" />
+  <circle cx="200" cy="120" r="2" fill="rgba(255,255,255,0.12)" />
+  <circle cx="140" cy="200" r="2" fill="rgba(255,255,255,0.12)" />
+</svg>
+
