@@ -1,16 +1,16 @@
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", (e) => {
-      const targetId = anchor.getAttribute("href");
-      if (!targetId || targetId === "#") return;
-  
-      e.preventDefault();
-      const section = document.querySelector(targetId);
-      if (!section) return;
-  
-      section.scrollIntoView({ behavior: "smooth" });
-    });
+  anchor.addEventListener("click", (e) => {
+    const targetId = anchor.getAttribute("href");
+    if (!targetId || targetId === "#") return;
+
+    e.preventDefault();
+    const section = document.querySelector(targetId);
+    if (!section) return;
+
+    section.scrollIntoView({ behavior: "smooth" });
   });
-  
+});
+
 // ─────────────────────────────────────────────
 // 🌗 Theme toggle
 // ─────────────────────────────────────────────
@@ -30,7 +30,9 @@ function applyTheme(theme) {
   if (stored === "light" || stored === "dark") {
     applyTheme(stored);
   } else {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
     applyTheme(prefersDark ? "dark" : "light");
   }
 })();
@@ -100,7 +102,8 @@ if (contactForm) {
       .then(
         () => {
           if (contactStatus) {
-            contactStatus.textContent = "메시지가 성공적으로 전송되었습니다. 감사합니다!";
+            contactStatus.textContent =
+              "메시지가 성공적으로 전송되었습니다. 감사합니다!";
           }
           contactForm.reset();
         },
